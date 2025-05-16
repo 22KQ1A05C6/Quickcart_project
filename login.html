@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="styles1.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#LoginForm').submit(function (e) {
+        var username = $('#Username').val();
+        var password = $('#password').val();
+        var message = '';
+
+        // Validation
+        if (username.trim() === '') {
+          message = 'Username cannot be empty';
+        } else if (password.trim() === '') {
+          message = 'Password cannot be empty';
+        }
+
+        if (message !== '') {
+          e.preventDefault();
+          $('#alertMessage').html(message).show();
+
+          setTimeout(function () {
+            $('#alertMessage').fadeOut();
+          }, 1000);
+        } else {
+          // ✅ Set login state in localStorage before redirect
+          localStorage.setItem('isLoggedIn', 'true');
+          localStorage.setItem('username', username);
+          // allow form submission to home.html
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <center>
+    <div class="login">
+      <form id="LoginForm" action="home.html">
+        <h1>Login</h1>
+        <div class="details">
+          <input type="text" placeholder="Enter your Phone or Email" id="Username"><br><br>
+          <input type="password" placeholder="Password" id="password"><br><br>
+          <button type="submit">Continue</button>
+        </div>
+      </form>
+      <h4>Don't have an account? <a href="signup.html">Sign Up</a></h4>
+      <div id="alertMessage"></div>
+    </div>
+  </center>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!-- navbar.html -->
+<nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="home.html">Store</a>
+    <form id="searchForm" class="d-flex ms-3 search-bar" role="search" action="search.html">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search products or categories...">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>      
+    <div class="ms-auto d-flex align-items-center">
+      <span id="welcomeMessage" class="me-3 text-success fw-bold"></span>
+      <button id="loginBtn" class="btn btn-primary me-3">Login</button>
+      <button id="logoutBtn" class="btn btn-danger me-3" style="display: none;">Logout</button>
+      <button class="btn me-3"   onclick="window.location.href='cart.html'">Cart</button>
+      <button class="btn me-3"  onclick="window.location.href='support.html'">Support</button>
+      <button class="btn">⋮</button>
+    </div>
+  </nav>
+  

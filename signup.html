@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles1.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#SignupForm').submit(function(e){
+                var firstname = $('#firstname').val();
+                var Lastname = $('#Lastname').val();
+                var country = $('#country').val();
+                var Email = $('#Email').val();
+                var password = $('#password').val();
+                var confirmpassword = $('#confirmpassword').val();
+                var Phone = $('#Phone').val();
+                var message = ''; // Clear previous message
+
+                // Check if username or password is empty
+                if(firstname.trim() == ''){
+                    message = 'Firstname cannot be empty';
+                } else if(Lastname.trim() == ''){
+                    message = 'Lastname cannot be empty';
+                } else if(country.trim() == ''){
+                    message = 'country cannot be empty';
+                } else if(Email.trim() == ''){
+                    message = 'Email cannot be empty';
+                } else if(password.trim() == ''){
+                    message = 'Password cannot be empty';
+                } else if(confirmpassword.trim() == ''){
+                    message = 'confirm password cannot be empty';
+                } else if(password.trim() != confirmpassword.trim()){
+                    message = 'Password and Confirm Password must be Same';
+                } else if(Phone.trim() == ''){
+                    message = 'Phone number cannot be empty';
+                }
+                
+                // If there's a message, prevent form submission and display the alert
+                if(message != ''){
+                    e.preventDefault();
+                    $('#alertMessage').html(message).show();
+
+                    // Hide the alert after 10 seconds (10000 milliseconds)
+                    setTimeout(function(){
+                        $('#alertMessage').fadeOut();
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <center>
+    <div class="signup">
+        <form id="SignupForm"  action="login.html">
+        <h1>Create your Account</h1>
+        <div class="details">
+            <input type="text" placeholder="First Name*" id="firstname">
+            <input type="text" placeholder="Last Name*" id="Lastname"><br><br>
+            <input type="text" placeholder="Country*" id="country"><br><br>
+            <input type="date"><br><br>
+            <input type="email" placeholder="Your Email*" id="Email"><br><br>
+            <input type="password" placeholder="Password*" id="password"><br><br>
+            <input type="password" placeholder="Confirm Password*" id="confirmpassword"><br><br>
+            <input type="numbers" placeholder="Phone Number*" id="Phone"><br><br>
+            <input type="checkbox" class="checkbox">
+            <option>Accept Terms and Conditions</option><br><br>
+            <button type="submit">Continue</button>
+        </div>
+        </form>
+        <div id="alertMessage"></div>
+    </div>
+    </center>
+</body>
+</html>

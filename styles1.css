@@ -1,0 +1,50 @@
+.signup, .login{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    height: 680px;
+    width: 500px;
+    align-items: center;
+    align-content: center;
+    margin-top: 50px;
+}
+input,button{
+    border: 2px solid rgba(0, 0, 0,0.3);
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+}
+.checkbox{
+    height: 20px;
+    width: 20px;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.login{
+    height: 500px;
+    width: 500px;
+}
+h1,button{
+    color: #2874f0;
+    font-weight: bold;
+}
+#alertMessage {
+    position: fixed;
+    top: 10vh;
+    right: 10vh;
+    background-color: rgba(232, 32, 32, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+}
+h4{
+    color: #06080c;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: #2874f0;
+    font-weight: bold;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Search Results</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="navbar-container"></div>
+
+<div class="container mt-4">
+  <h2>Search Results</h2>
+  <div id="search-results" class="row"></div>
+</div>
+
+<script>
+// Load navbar
+fetch('navbar.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('navbar-container').innerHTML = html;
+
+    // ✅ Add search form event listener AFTER navbar loads
+    const searchForm = document.getElementById("searchForm");
+    const searchInput = document.getElementById("searchInput");
+
+    if (searchForm && searchInput) {
+      searchForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const query = searchInput.value.trim();
+        if (query) {
+          window.location.href = `search.html?q=${encodeURIComponent(query)}`;
+        }
+      });
+    }
+  });
+
+
+// Get query from URL
+function getQueryParam(name) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(name) || '';
+}
+
+// Fetch products and filter by query
+const query = getQueryParam('q').toLowerCase();
+
+fetch('products.json')
+  .then(response => response.json())
+  .then(products => {
+    const filtered = products.filter(p =>
+      p.name.toLowerCase().includes(query) ||
+      p.category.toLowerCase().includes(query)
+    );
+    renderResults(filtered);
+  });
+
+function renderResults(products) {
+  const container = document.getElementById('search-results');
+  container.innerHTML = '';
+
+  if (products.length === 0) {
+    container.innerHTML = `
+      <div class="text-center mt-5">
+        <img src="https://cdn-icons-png.flaticon.com/512/7486/7486802.png" 
+             alt="No Results" 
+             style="width: 150px; opacity: 0.6;">
+        <h4 class="text-muted mt-3">No results found for your search.</h4>
+      </div>
+    `;
+    return;
+  }
+  
+
+  products.forEach(product => {
+    const card = document.createElement('div');
+    card.className = 'col-md-4 mb-4';
+    card.innerHTML = `
+      <div class="card h-100">
+        <img src="${product.image}" class="card-img-top" style="height: 200px; object-fit: contain;">
+        <div class="card-body">
+          <h5 class="card-title">${product.name}</h5>
+          <p class="text-muted">${product.category}</p>
+          <p class="text-danger fw-bold">${product.price}</p>
+          <a href="product.html?id=${product.id}" class="btn btn-primary">View Product</a>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  });
+}
+</script>
+
+</body>
+</html>

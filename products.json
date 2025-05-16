@@ -1,0 +1,99 @@
+[
+    {
+      "id": "1",
+      "name": "SAMSUNG Galaxy S24 5G (Amber Yellow, 256 GB)  (8 GB RAM)",
+      "price": "₹50,999",
+      "category":"mobile",
+      "description": "Behold the Samsung Galaxy S24 smartphone, an exceptional amalgamation of incredible technology and superior sophistication. Unlock the magic of AI-powered photo editing. Now you can effortlessly perfect your photos, ensuring every image shines. Whether you're taking a super sweet selfie, shooting wide-angle pics, or zooming in, these cameras will help ensure you leave with a pixel-perfect shot. A true pixel powerhouse that will not disappoint. Ever. Snap high-res pics for that will no doubt withstand the test of time for years to come.",
+      "image": "resources/images/samsungs24.webp"
+    },
+    {
+      "id": "2",
+      "name": "Motorola G85 5G (Olive Green, 128 GB)  (8 GB RAM)",
+      "price": "₹15,999",
+      "category":"mobile",
+      "description": "Discover the Moto G85 5G, which has a revolutionary 3D Curved pOLED 120 Hz Display protected by Gorilla Glass 5 for remarkable longevity. With the 50 MP OIS Sony LYTIA 600 Camera system, you can take beautiful pictures in any kind of illumination. Utilise Smart Connect to share content with ease and make use of the built-in 12 GB RAM and 256 GB storage. Immersive sound is produced by its Dolby Atmos Dual Stereo Speakers, and its Snapdragon 6s Gen 3 engine guarantees lightning-fast 5G speeds over 13 bands. Android 14 delivers the newest advancements in mobile technology and security, with a 5000 mAh battery and 33 W TurboPower charging.",
+      "image": "resources/images/motog85.webp"
+    },
+    {
+        "id": "3",
+        "name": "Apple iPhone 13 (Starlight, 128 GB)",
+        "price": "₹44,999",
+        "category":"mobile",
+        "description": "iPhone 13. boasts an advanced dual-camera system that allows you to click mesmerising pictures with immaculate clarity. Furthermore, the lightning-fast A15 Bionic chip allows for seamless multitasking, elevating your performance to a new dimension. A big leap in battery life, a durable design, and a bright Super Retina XDR display facilitate boosting your user experience.",
+        "image": "resources/images/applei13.webp"
+    },
+    {
+      "id": "4",
+      "name": "Shuffle Ultra Sneakers For Men  (White , 8)",
+      "price": "₹1,700",
+      "category":"shoes",
+      "description": "Crafted with fine technology and futuristic design, PUMA shoe is surely here to uplift your style and track games. Kick off on street and field in this shoe from the worlds leading and much loved sports brand, PUMA.",
+      "image": "resources/images/pumashoes.webp"
+    },
+    {
+      "id": "5",
+      "name": "Lifestyle Shoes for Men | Elegantly Rounded Front, Soothing Insole Casuals For Men  (White , 9)",
+      "price": "₹1,187",
+      "category":"shoes",
+      "description": "Conquer new horizons in style with Red Tape's men's lifestyle shoes. Embrace the thrill of exploration without compromising on comfort or fashion-forward design. Features: Simple upkeep: The TPR sole and PU upper create a stylish, modern look and require minimal maintenance.Designed to slay: Crafted with the premium insole material, these shoes offer stability and relaxing posture.Surface grip: The insole and the TPR sole material give us firm support on any surface while offering a classy look.Perfect Fit: These men's casual shoes feature a premium insole material.",
+      "image": "resources/images/redtape.webp"
+    },
+    {
+      "id": "6",
+      "name": "RED TAPE Casual Lifestyle Shoes for Men | Soft Cushioned Insole, Slip-Resistance Sneakers For Men  (White , 7)",
+      "price": "₹1,205",
+      "category":"shoes",
+      "description": "FEATURES: COMFORT AND FUNCTIONALITY: Carefully conceived to keep your feet comfortable all day, while still having a casual look. ANTI-SLIP: TPR Soles of top quality give great grip on different surfaces and decrease the chances of losing one’s balance. HIGH-QUALITY MATERIALS: Crafted using high-grade PU material for long-lasting use.",
+      "image": "resources/images/redtapecas.webp"
+    },
+    {
+      "id": "7",
+      "name": "AJANTA Casual PVC Waterproof Slip On For Men  (Black , 9)",
+      "price": "₹309",
+      "category":"shoes",
+      "description": "These shoes for men are made by genuine material with thicken cushioned insole, which will keep your foot comfortable.",
+      "image": "resources/images/ajantashoes.webp"
+    },
+    {
+      "id": "8",
+      "name": "TeeWink Oversized Men Self Design Round Neck Cotton Blend Light Blue T-Shirt Men Self Design Round Neck Cotton Blend Light Blue T-Shirt",
+      "price": "₹295",
+      "category":"t-shirts",
+      "description": "Manufactured by:Teewink, Noida, Uttar Pradesh, 201301",
+      "image": "resources/images/teewink.webp"
+    },
+    {
+      "id": "9",
+      "name": "Force Men Solid Round Neck Polyester Maroon T-Shirt",
+      "price": "₹344",
+      "category":"t-shirts",
+      "description": "Manufactured by:52-K,THILAGAR NAGAR,ANNUPARPALAYAM,AVINASHI ROAD,TIRUPUR.641652",
+      "image": "resources/images/force.webp"
+    },
+    {
+      "id": "10",
+      "name": "Noise Crew Go with 1.39 Display BT Calling with Metal Strap and 7 Days Battery Life Smartwatch  (Elite Black StrapRegular)",
+      "price": "₹1,699",
+      "category":"watches",
+      "description": "Striking 1.39-inch display with a 240x240 pixel resolution, ensuring sharp and clear visuals.Elevate your style with a range of available strap options and revel in the premium metal construction that radiates luxury.Comes equipped with the Noise Health Suite, sleep and female cycle tracking, and productivity tools, empowering you to manage your health and time effectively.",
+      "image": "resources/images/noisewatch.webp"
+    },
+    {
+      "id": "11",
+      "name": "boAt 100 Wired  (Black, In the Ear)",
+      "price": "₹299",
+      "category":"earphones",
+      "description": "If you are looking for a stylish pair of wired earphones, you should consider the boAt BassHeads 100 earphones. The earbuds of this pair of earphones come with a unique design that is inspired by the hawk and looks extremely trendy. The boAt BassHeads 100 earphones are also lightweight and can be worn easily for long durations.",
+      "image": "resources/images/boat100.webp"
+    },
+    {
+      "id": "12",
+      "name": "boAt Rockerz 450 w/ 40mm Drivers, 15 HRS Playback, Soft Padded Earcups Bluetooth  (Luscious Black, On the Ear)",
+      "price": "₹1,299",
+      "category":"earphones",
+      "description": "Are you looking for a headset that features eye-catching aesthetics and dual modes? If yes, bring home the boAt Rockerz 450 that has an AUX-mode as well as the Bluetooth connectivity feature. The 40-mm drivers and adjustable earcups ensure you enjoy a comfortable listening experience that is immersive.",
+      "image": "resources/images/boat450.webp"
+    }
+  ]
+  
